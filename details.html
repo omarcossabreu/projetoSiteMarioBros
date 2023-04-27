@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/imagens/favicon.ico">
+    <title>Super Mario Bros - O Filme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=El+Messiri:wght@600&family=Kanit:wght@200&family=Poppins:wght@100;300;500&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <div class="fundo_video"> <!--video de fundo-->
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/video-mario.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <header class="menu"> <!--cabeçalho-->
+        <a>
+            <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="logo chapeu do Mario">
+        </a>
+        <nav>
+            <ul class="menu_lista">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container"> <!--conteudo-->
+        <div class="informacoes">
+            <img 
+                class="imagem_titulo" 
+                src="./src/imagens/titulo.png" 
+                alt="imagem do titulo do filme">
+
+            <p class="descricao">
+                Super Mario Bros. O Filme finalmente foi lançado, trazendo inúmeras referências ao universo do jogo, da Nintendo. Os filmes famosos, e tudo que você possa imaginar.
+                Incluindo pequenos detalhes quase imperceptíveis, embora geniais.
+                Todos os detalhes, que você perdeu em Super Mario Bros. O Filme.
+            </p>
+            <p class="descricao">
+                São 111  DETALHES + EASTER EGGS + REFERÊNCIAS + APARIÇÕES.<br>
+                Aqui está tudo que você perdeu em SUPER MARIO O FILME.
+            </p>
+
+            <!-- <button class="botao_trailer"><a target="_blank" href="https://www.youtube.com/watch?v=QKz20Gc936E">Curiosidades sobre o Filme</a></button> -->
+
+            <button class="botao_trailer">Curiosidades sobre o Filme</a></button>
+        </div>
+
+        <div class="modal">
+                <div class="conteudo_modal">
+                  <span class="fechar__modal">X</span>
+                  <iframe 
+                  id="video"
+                  width="560" height="315" src="https://www.youtube.com/embed/QKz20Gc936E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+        </div>     
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

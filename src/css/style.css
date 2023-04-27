@@ -1,0 +1,159 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.menu .logo {
+    width: 80px;
+}
+
+.menu .menu_lista {
+    display: flex;
+    height: 100%;
+}
+
+.menu nav li a {
+    font-weight: bold; 
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out; 
+  }
+  
+  .menu nav li a:hover {
+    background-color: #d5011d;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px 30px;
+    align-items: center;
+    height: calc(100vh-132px); //com calc fazemos uma calculo para tamanho da tela 100vh altura de 100% da tela do usuario
+  }
+
+  .imagem_titulo {
+    max-width: 480px;
+  }
+
+  .imagem_mario {
+    max-width: 550px;
+  }
+
+  .descricao {
+    width: 90%;
+    color: #a8adb7;
+    font-size: 22px;
+    padding: 30px 0;
+  }
+
+  .botao_trailer {
+    background-color: #ff0021;
+    color: #ffffff;
+    border: none; 
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .botao_trailer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .botao_trailer a {
+    color: #ffffff;
+  }
+
+
+  /*----------------- VIDEO DE FUNDO -----------------------------*/
+
+  .fundo_video {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(52, 48, 48);
+    overflow: hidden;
+  }
+
+  .video {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /*::after, depois do elemento video, vamos criar um elemento novo, no caso para trabalhar a transparencia*/
+.fundo_video::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.8) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  /*-------------------------------- MODAL ---------------------------------------*/
+
+  .modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+  }
+
+  .conteudo_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 100vh;
+
+  }
+
+  .fechar__modal {
+    background-color: #ffffff;
+    color: #ff0021;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+  }
+
+  .modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+  }
+  
+  .modal.aberto {
+    opacity: 1;
+    visibility: visible;
+  }

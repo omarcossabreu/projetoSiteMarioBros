@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/imagens/favicon.ico">
+    <title>Super Mario Bros - O Filme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=El+Messiri:wght@600&family=Kanit:wght@200&family=Poppins:wght@100;300;500&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <div class="fundo_video"> <!--video de fundo-->
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/video-mario.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <header class="menu"> <!--cabeçalho-->
+        <a>
+            <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="logo chapeu do Mario">
+        </a>
+        <nav>
+            <ul class="menu_lista">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./details.html">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container"> <!--conteudo-->
+        <div class="informacoes">
+            <img 
+                class="imagem_titulo" 
+                src="./src/imagens/titulo.png" 
+                alt="imagem do titulo do filme">
+
+            <p class="descricao">
+                Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, gorvenado pela Princesa Peach, mas ameaçada pelo rei dos Koopas que faz de tudo para conseguir reinar em todos os lugares.
+            </p>
+
+            <button class="botao_trailer">Veja o Trailer</button>
+        </div>
+        
+        <img 
+            class="imagem_mario" 
+            src="./src/imagens/super-mario-chars.png" 
+            alt="Turma do Mario">
+
+        <div class="modal">
+                <div class="conteudo_modal">
+                  <span class="fechar__modal">X</span>
+                  <iframe
+                    id="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/Cb4WV4aXBpk"
+                    title="Trailer Oficial"
+                    frameborder="1"
+                    aloow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+        </div>    
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
