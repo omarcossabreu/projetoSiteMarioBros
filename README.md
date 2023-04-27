@@ -1,7 +1,7 @@
 <h1 align="center">Site Super Mario Bros 🧑🏻‍🔧 </h1>
 <br>
 <p align="center">
-  <img alt="projetositemario" src=".github/thelastofus.png" width="100%">
+  <img alt="projetositemario" src=".github/projetositemario.jpg" width="100%">
 </p>
 <br>
 <br>
@@ -18,7 +18,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git e Github
 
-- [Acesse o projeto finalizado, online]()
+- [Acesse o projeto finalizado, online](https://projeto-site-mario-bros-pi8e.vercel.app/)
 
 ## :memo: Licença
 
